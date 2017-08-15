@@ -13,4 +13,8 @@ public class Cilindro {
     public double getVolume() {
         return base.getArea() * altura;
     }
+
+    public double getArea() {
+        return (base.getArea() * 2) + (base.getCircunferencia() * altura);
+    }
 }
