@@ -12,11 +12,15 @@ public class Circulo {
         return raio;
     }
 
+    public double getCircunferencia() {
+        return 2 * raio * Math.PI;
+    }
+    
     public void setRaio(double raio) {
         this.raio = raio;
     }
 
     public double getArea() {
-        return raio * raio * 3.14;
+        return raio * raio * Math.PI;
     }
 }

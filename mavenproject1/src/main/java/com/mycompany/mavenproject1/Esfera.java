@@ -7,6 +7,6 @@ public class Esfera extends Circulo {
     }
 
     public double getVolume() {
-        return getRaio() * getRaio() * getRaio() * 3.14 * (4 / 3);
+        return getRaio() * getRaio() * getRaio() * Math.PI * (4 / 3);
     }
 }

@@ -1,15 +1,16 @@
 package com.mycompany.mavenproject1;
 
-public class Cilindro extends Circulo {
+public class Cilindro {
 
     private int altura;
+    private Circulo base;
 
-    public Cilindro(int altura, double raio) {
-        super(raio);
+    public Cilindro(int altura, Circulo base) {
         this.altura = altura;
+        this.base = base;
     }
 
     public double getVolume() {
-        return getArea() * altura;
+        return base.getArea() * altura;
     }
 }
